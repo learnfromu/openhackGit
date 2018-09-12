@@ -1,0 +1,60 @@
+﻿{
+  "$schema": "http://json.schemastore.org/proxies",
+  "proxies": {
+    "APIconsolidator": {
+      "matchCondition": {
+        "route": "funcCall/getRatings",
+        "methods": [
+          "GET"
+        ]
+      },
+      "backendUri": "https://openhacktest3.azurewebsites.net/api/GetRatings"
+    },
+    "APIconsolidator2": {
+      "matchCondition": {
+        "route": "funcCall/getRating",
+        "methods": [
+          "GET"
+        ]
+      },
+      "backendUri": "https://openhacktest3.azurewebsites.net/api/GetRating"
+    },
+    "APIconsolidator3": {
+      "matchCondition": {
+        "route": "funcCall/CreateRating",
+        "methods": [
+          "POST",
+          "GET"
+        ]
+      },
+      "backendUri": "https://openhacktest3.azurewebsites.net/api/CreateRating"
+    },
+    "APIconsolidator4": {
+      "matchCondition": {
+        "route": "funcCall/gProduct",
+        "methods": [
+          "GET"
+        ]
+      },
+      "backendUri": "https://serverlessohproduct.trafficmanager.net/api/GetProduct"
+    },
+    "APIconsolidator5": {
+      "matchCondition": {
+        "route": "funcCall/gUser",
+        "methods": [
+          "GET"
+        ]
+      },
+      "backendUri": "https://serverlessohproduct.trafficmanager.net/api/GetUser"
+    },
+    "APIconsolidator6": {
+      "matchCondition": {
+        "route": "funcCall/gProducts",
+        "methods": [
+          "GET"
+        ]
+      },
+      "backendUri": "https://serverlessohproduct.trafficmanager.net/api/GetProducts"
+    }
+  }
+}
